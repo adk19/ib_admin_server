@@ -1,0 +1,1197 @@
+{
+	"info": {
+		"_postman_id": "23c50a72-8615-4371-a25c-a0ff90f514bc",
+		"name": "IconBuzzer_admin (17-11-25)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32728311"
+	},
+	"item": [
+		{
+			"name": "Auth Controller",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Harry\",\r\n    \"email\": \"test@gmail.com\",\r\n    \"password\": \"harry@123\",\r\n    \"passwordConfirm\": \"harry@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/auth/register"
+					},
+					"response": []
+				},
+				{
+					"name": "Sent OTP",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/auth/sent-otp?email=test@gmail.com&type=register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"sent-otp"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "test@gmail.com"
+								},
+								{
+									"key": "type",
+									"value": "register",
+									"description": "register,   login"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Validate OTP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "type",
+									"value": "register",
+									"description": "login ,   register",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "test@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "otp",
+									"value": "164491",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:8080/api/auth/varify-otp"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin@test.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin@123",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:8080/api/auth/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/auth/forgot-password?email=harrypraja123@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"forgot-password"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "harrypraja123@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset-password",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "password",
+									"value": "@123",
+									"type": "text"
+								},
+								{
+									"key": "passwordConfirm",
+									"value": "aman@123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/auth/reset-password?token=3908cc95ce05f221851dfaa8f0167fbe8b8c7847945edb54c377244ad8d9bd3a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"reset-password"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "3908cc95ce05f221851dfaa8f0167fbe8b8c7847945edb54c377244ad8d9bd3a"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Token Verify",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/auth/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWQ0YzM0NDcyODUxODZkNmE3NjgxYiIsInRva2VuIjoiZGY4MjMyNzViYTdlODAyMjVkYTQwZDY0NjAzZDQ0YWNiMzNjMTIwMzMyZTc0M2JhZWE3YWM0NzlmMDdlNjFjNiIsImlhdCI6MTc2MzcxMzczOSwiZXhwIjoxNzYzODAwMTM5fQ.x3lrBO8carx0sYY1lAeCCjG7DKqjczuVIRT6VawmjtA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"auth",
+								"verify"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MWQ0YzM0NDcyODUxODZkNmE3NjgxYiIsInRva2VuIjoiZGY4MjMyNzViYTdlODAyMjVkYTQwZDY0NjAzZDQ0YWNiMzNjMTIwMzMyZTc0M2JhZWE3YWM0NzlmMDdlNjFjNiIsImlhdCI6MTc2MzcxMzczOSwiZXhwIjoxNzYzODAwMTM5fQ.x3lrBO8carx0sYY1lAeCCjG7DKqjczuVIRT6VawmjtA"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users Controller",
+			"item": [
+				{
+					"name": "Admin",
+					"item": [
+						{
+							"name": "User list",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{cokkie}}"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8080/api/user/list"
+							},
+							"response": []
+						},
+						{
+							"name": "User Page list",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{cokkie}}"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/user/pagelist?page=1&limit=10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"user",
+										"pagelist"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "10"
+										},
+										{
+											"key": "search",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": "is_active",
+											"description": "first_name, last_name, email, city, state, country, zip_code, is_active",
+											"disabled": true
+										},
+										{
+											"key": "order",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User by id",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{cokkie}}"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/user/data?_id=691d8d32a71227e120f10da1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"user",
+										"data"
+									],
+									"query": [
+										{
+											"key": "_id",
+											"value": "691d8d32a71227e120f10da1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User status update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{cokkie}}"
+									}
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"active\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/user/status?_id=691d8d32a71227e120f10da1&active=false",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"user",
+										"status"
+									],
+									"query": [
+										{
+											"key": "_id",
+											"value": "691d8d32a71227e120f10da1"
+										},
+										{
+											"key": "active",
+											"value": "false"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "User Delete Permanents Copy",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{cokkie}}"
+									}
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/user/delete?_id=691d8d32a71227e120f10da1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"user",
+										"delete"
+									],
+									"query": [
+										{
+											"key": "_id",
+											"value": "691d8d32a71227e120f10da1"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get Me",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/user/me"
+					},
+					"response": []
+				},
+				{
+					"name": "Update me",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Aman\",\r\n    \"last_name\": \"Patel\",\r\n    \"email\": \"harrypraja123@gmail.com\",\r\n    \"profile\": {\r\n        \"address\": {\r\n            \"street\": \"Patel faliyu\",\r\n            \"city\": \"Surat\",\r\n            \"state\": \"Gujarat\",\r\n            \"country\": \"India\",\r\n            \"zip_code\": \"398010\"\r\n        },\r\n        \"avatar\": \"https://api.dicebear.com/9.x/avataaars/svg?seed:32\"\r\n        // \"phone\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/user/update-me"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "password",
+									"value": "test@123",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "aman@123",
+									"type": "text"
+								},
+								{
+									"key": "newPasswordConfirm",
+									"value": "aman@123",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:8080/api/user/update-password"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category Controller",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "ABC ",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:8080/api/category/create"
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/category/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Page list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/category/pagelist?page=1&limit=10&search=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"category",
+								"pagelist"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "search",
+									"value": ""
+								},
+								{
+									"key": "sort",
+									"value": "active",
+									"description": "name, active",
+									"disabled": true
+								},
+								{
+									"key": "order",
+									"value": "-1",
+									"description": "1, -1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/category/status?_id=691ea5af8fc087c06c3f720d&active=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"category",
+								"status"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "691ea5af8fc087c06c3f720d"
+								},
+								{
+									"key": "active",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Nova Edge",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "active",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/category/data?_id=691ead9cb668efac6105f61c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"category",
+								"data"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "691ead9cb668efac6105f61c"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_ids\": [\r\n        \"691ed06d6e4d7a44b4ed2ad8\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/category"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subcategory Controller",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category",
+									"value": "691ead9cb668efac6105f61c",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Technology & IT",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Technology & IT icons represent digital systems, computing devices, software tools, coding environments, networking, cloud infrastructure, and modern tech concepts. Common icons include laptops, servers, code symbols, APIs, data storage, automation, robots, and artificial intelligence elements. These icons help users understand technical actions such as deployment, debugging, analytics, security, and configuration.",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "true",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "http://localhost:8080/api/sub-category/create"
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/sub-category/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Page list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/sub-category/pagelist?page=1&limit=10&search=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sub-category",
+								"pagelist"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "search",
+									"value": ""
+								},
+								{
+									"key": "sort",
+									"value": "category",
+									"disabled": true
+								},
+								{
+									"key": "order",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List By Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/sub-category/list/:_id?search=Medical",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sub-category",
+								"list",
+								":_id"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "Medical"
+								}
+							],
+							"variable": [
+								{
+									"key": "_id",
+									"value": "691ea4e904e76cb5369d6410"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/sub-category/status?_id=691ee431248ad7a64b73c8be&active=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sub-category",
+								"status"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "691ee431248ad7a64b73c8be"
+								},
+								{
+									"key": "active",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category",
+									"value": "691ea5af8fc087c06c3f720d",
+									"description": "691ea4e904e76cb5369d6410",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Business",
+									"description": "Business & Finance",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Business & Finance icons represent concepts related to corporate activities, professional workflows, financial transactions, and economic operations. These icons typically include symbols such as briefcases, charts, graphs, money bags, currency signs, calculators, reports, and office elements.",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/sub-category/data?_id=691ee392248ad7a64b73c8b5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"sub-category",
+								"data"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "691ee392248ad7a64b73c8b5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{cokkie}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_ids\": [\r\n        \"6901da3ac2ad58b5db465a7f\",\r\n        \"691ee33e248ad7a64b73c8b2\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/sub-category"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Icons",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{TOKEN}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/dumar/Downloads/1001tracklists-64.svg"
+								},
+								{
+									"key": "model",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "iconType",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "tags",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:4500/api/icon/create"
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4500/api/icon/list?page=1&limit=50",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"api",
+								"icon",
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "50"
+								},
+								{
+									"key": "search",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "entertainment",
+									"description": "entertainment, media, finance",
+									"disabled": true
+								},
+								{
+									"key": "sortby",
+									"value": "regular",
+									"description": "asc, desc, likes, downloaded",
+									"disabled": true
+								},
+								{
+									"key": "other",
+									"value": "regular",
+									"description": "regular, light, thin, filled, bold, outline, emoji, color, duoton",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Likes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4500/api/like?_id=68d39bb9da6aefd8faaacfd2&action=like",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"api",
+								"like"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "68d39bb9da6aefd8faaacfd2"
+								},
+								{
+									"key": "action",
+									"value": "like",
+									"description": "like, dislike"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Downloaded",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4500/api/download?_id=68d39bb9da6aefd8faaacfd2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"api",
+								"download"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "68d39bb9da6aefd8faaacfd2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"music\",\r\n    \"category\": \"entertainment\",\r\n    \"type\": \"regular\",\r\n    \"tags\": \"song,music,play,headphone\",\r\n    \"description\": \"This is the entertainment musid headphone icon\",\r\n    \"is_active\": false,\r\n    \"is_delete\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4500/api/update?_id=68d39dbada6aefd8faaacfd5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4500",
+							"path": [
+								"api",
+								"update"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "68d39dbada6aefd8faaacfd5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

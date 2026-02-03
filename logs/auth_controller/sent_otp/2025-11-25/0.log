@@ -1,0 +1,60 @@
+[2025-11-26 00:00:43] [INFO] URL: GET /api/auth/sent-otp?email=iconbuzzer%40gmail.com&type=login
+[2025-11-26 00:00:43] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
+[2025-11-26 00:00:43] [INFO] Body: undefined
+[2025-11-26 00:00:43] [INFO] =====================================
+
+[2025-11-26 00:09:00] [INFO] URL: GET /api/auth/sent-otp?email=iconbuzzer%40gmail.com&type=login
+[2025-11-26 00:09:00] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8","if-none-match":"W/\"86-NKyYXKSFTiBdQkj39T/7j6AB5rE\""}
+[2025-11-26 00:09:00] [INFO] Body: undefined
+[2025-11-26 00:09:00] [INFO] =====================================
+
+[2025-11-26 00:13:28] [INFO] URL: GET /api/auth/sent-otp?email=iconbuzzer%40gmail.com&type=login
+[2025-11-26 00:13:28] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8","if-none-match":"W/\"86-NKyYXKSFTiBdQkj39T/7j6AB5rE\""}
+[2025-11-26 00:13:28] [INFO] Body: undefined
+[2025-11-26 00:13:28] [INFO] =====================================
+
+[2025-11-26 00:17:58] [INFO] URL: GET /api/auth/sent-otp?email=iconbuzzer%40gmail.com&type=login
+[2025-11-26 00:17:58] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8","if-none-match":"W/\"86-NKyYXKSFTiBdQkj39T/7j6AB5rE\""}
+[2025-11-26 00:17:58] [INFO] Body: undefined
+[2025-11-26 00:17:58] [INFO] =====================================
+
+[2025-11-26 00:26:50] [INFO] URL: GET /api/auth/sent-otp?email=iconbuzzer%40gmail.com&type=login
+[2025-11-26 00:26:50] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8","if-none-match":"W/\"86-NKyYXKSFTiBdQkj39T/7j6AB5rE\""}
+[2025-11-26 00:26:50] [INFO] Body: undefined
+[2025-11-26 00:26:50] [INFO] =====================================
+
+[2025-11-26 00:28:34] [INFO] URL: GET /api/auth/sent-otp?email=iconbuzzer%40gmail.com&type=login
+[2025-11-26 00:28:34] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8","if-none-match":"W/\"86-NKyYXKSFTiBdQkj39T/7j6AB5rE\""}
+[2025-11-26 00:28:34] [INFO] Body: undefined
+[2025-11-26 00:28:34] [INFO] =====================================
+
+[2025-11-26 00:30:13] [INFO] URL: GET /api/auth/sent-otp?email=iconbuzzer%40gmail.com&type=login
+[2025-11-26 00:30:13] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8","if-none-match":"W/\"86-NKyYXKSFTiBdQkj39T/7j6AB5rE\""}
+[2025-11-26 00:30:13] [INFO] Body: undefined
+[2025-11-26 00:30:13] [INFO] =====================================
+
+[2025-11-26 00:38:33] [INFO] URL: GET /api/auth/sent-otp?email=iconbuzzer%40gmail.com&type=login
+[2025-11-26 00:38:33] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8","if-none-match":"W/\"86-NKyYXKSFTiBdQkj39T/7j6AB5rE\""}
+[2025-11-26 00:38:33] [INFO] Body: undefined
+[2025-11-26 00:38:33] [INFO] =====================================
+
+[2025-11-26 00:39:16] [INFO] URL: GET /api/auth/sent-otp?email=iconbuzzer%40gmail.com&type=login
+[2025-11-26 00:39:16] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8","if-none-match":"W/\"86-NKyYXKSFTiBdQkj39T/7j6AB5rE\""}
+[2025-11-26 00:39:16] [INFO] Body: undefined
+[2025-11-26 00:39:16] [INFO] =====================================
+
+[2025-11-26 00:42:57] [INFO] URL: GET /api/auth/sent-otp?email=iconbuzzer%40gmail.com&type=login
+[2025-11-26 00:42:57] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8","if-none-match":"W/\"86-NKyYXKSFTiBdQkj39T/7j6AB5rE\""}
+[2025-11-26 00:42:57] [INFO] Body: undefined
+[2025-11-26 00:42:57] [INFO] =====================================
+
+[2025-11-26 00:43:03] [INFO] URL: GET /api/auth/sent-otp?email=iconbuzzer%40gmail.com&type=login
+[2025-11-26 00:43:03] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8","if-none-match":"W/\"86-NKyYXKSFTiBdQkj39T/7j6AB5rE\""}
+[2025-11-26 00:43:03] [INFO] Body: undefined
+[2025-11-26 00:43:03] [INFO] =====================================
+
+[2025-11-26 00:47:49] [INFO] URL: GET /api/auth/sent-otp?email=iconbuzzer%40gmail.com&type=login
+[2025-11-26 00:47:49] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8","if-none-match":"W/\"86-NKyYXKSFTiBdQkj39T/7j6AB5rE\""}
+[2025-11-26 00:47:49] [INFO] Body: undefined
+[2025-11-26 00:47:49] [INFO] =====================================
+

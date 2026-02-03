@@ -1,0 +1,5 @@
+[2025-11-25 23:33:57] [INFO] URL: POST /api/auth/login
+[2025-11-25 23:33:57] [INFO] Headers: {"content-type":"application/json","user-agent":"PostmanRuntime/7.50.0","accept":"*/*","postman-token":"d796fdc3-876e-47db-927b-0e760801d866","host":"localhost:8080","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"71"}
+[2025-11-25 23:33:57] [INFO] Body: {"email":"iconbuzzer@gmail.com","password":"admin@123"}
+[2025-11-25 23:33:57] [INFO] =====================================
+

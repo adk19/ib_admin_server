@@ -1,0 +1,36 @@
+[2025-11-25 23:52:56] [WARN] Notfound: User --> null
+[2025-11-25 23:52:56] [INFO] URL: GET /api/auth/sent-otp?email=dumaraliyaajay%40gmail.com&type=login
+[2025-11-25 23:52:56] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
+[2025-11-25 23:52:56] [INFO] Body: undefined
+[2025-11-25 23:52:56] [INFO] =====================================
+
+[2025-11-25 23:53:35] [WARN] Notfound: User --> null
+[2025-11-25 23:53:35] [INFO] URL: GET /api/auth/sent-otp?email=dumaraliyaajay%40gmail.com&type=login
+[2025-11-25 23:53:35] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
+[2025-11-25 23:53:35] [INFO] Body: undefined
+[2025-11-25 23:53:35] [INFO] =====================================
+
+[2025-11-25 23:55:48] [WARN] Notfound: User --> null
+[2025-11-25 23:55:48] [INFO] URL: GET /api/auth/sent-otp?email=dumaraliyaajay%40gmail.com&type=login
+[2025-11-25 23:55:48] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
+[2025-11-25 23:55:48] [INFO] Body: undefined
+[2025-11-25 23:55:48] [INFO] =====================================
+
+[2025-11-25 23:56:26] [WARN] Notfound: User --> null
+[2025-11-25 23:56:26] [INFO] URL: GET /api/auth/sent-otp?email=dumaraliyaajay%40gmail.com&type=login
+[2025-11-25 23:56:26] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
+[2025-11-25 23:56:26] [INFO] Body: undefined
+[2025-11-25 23:56:26] [INFO] =====================================
+
+[2025-11-25 23:56:44] [WARN] Notfound: User --> null
+[2025-11-25 23:56:44] [INFO] URL: GET /api/auth/sent-otp?email=dumaraliyaajay%40gmail.com&type=login
+[2025-11-25 23:56:44] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
+[2025-11-25 23:56:44] [INFO] Body: undefined
+[2025-11-25 23:56:44] [INFO] =====================================
+
+[2025-11-25 23:57:52] [WARN] Notfound: User --> null
+[2025-11-25 23:57:52] [INFO] URL: GET /api/auth/sent-otp?email=dumaraliyaajay%40gmail.com&type=login
+[2025-11-25 23:57:52] [INFO] Headers: {"host":"localhost:8080","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","accept":"application/json, text/plain, */*","sec-ch-ua":"\"Chromium\";v=\"142\", \"Google Chrome\";v=\"142\", \"Not_A Brand\";v=\"99\"","sec-ch-ua-mobile":"?0","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
+[2025-11-25 23:57:52] [INFO] Body: undefined
+[2025-11-25 23:57:52] [INFO] =====================================
+
